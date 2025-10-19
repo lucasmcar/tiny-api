@@ -1,5 +1,5 @@
 {
-    "name": "lucas/tiny-api-framework",
+    "name": "lucas-dev/tiny-api-framework",
     "description": "Um framework baseado em slim apenas para apis restfull",
     "type": "project",
     "license": "MIT",
