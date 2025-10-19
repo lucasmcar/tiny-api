@@ -1,0 +1,31 @@
+{
+    "name": "lucas/tiny-api-framework",
+    "description": "Um framework baseado em slim apenas para apis restfull",
+    "type": "project",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "swagger-api/swagger-ui": "^5.29",
+        "php" : "^8.3",
+        "firebase/php-jwt": "^6.11",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TinyApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lucasmcar",
+            "email": "lmc.lucas90@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+
+}

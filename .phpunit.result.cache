@@ -1,0 +1,1 @@
+{"version":2,"defects":{"Tests\\AuthControllerTest::testLoginReturnsToken":8},"times":{"Tests\\AuthControllerTest::testLoginReturnsToken":0.003}}
