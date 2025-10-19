@@ -4,12 +4,20 @@ namespace TinyApi\controllers;
 use TinyApi\core\http\Request;
 use TinyApi\core\http\Response;
 use TinyApi\core\auth\Auth;
+use TinyApi\core\connection\Database;
 
 /**
  * @OA\Tag(name="Users")
  */
 class UserController
 {
+
+    private $db;
+
+    public function __construct() 
+    {
+        $this->db = Database::getInstance();
+    }
     /**
      * @OA\Get(
      *  path="/users",
@@ -19,10 +27,9 @@ class UserController
      */
     public function index()
     {
-        $users = [
-            ['id'=>1,'name'=>'Admin'],
-            ['id'=>2,'name'=>'User 2']
-        ];
+
+        $users = $this->db->query("Select * from clientes_integrados");
+        
         return Response::json(['users' => $users]);
     }
 

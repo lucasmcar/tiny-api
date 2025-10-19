@@ -3,7 +3,7 @@
     "description": "Um framework baseado em slim apenas para apis restfull",
     "type": "project",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
         "swagger-api/swagger-ui": "^5.29",
         "php" : "^8.3",
